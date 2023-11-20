@@ -259,6 +259,7 @@ def preprocess_media(input_files: List[str], output_folder: str, settings: Dict)
                 video_process(input_file, sub_output_folder, settings)
             else:
                 image_process(input_file, sub_output_folder, settings)
+        print(f"Media preprocessing completed")
     except Exception as e:
         logger.error(f"Error occurred during media preprocessing: {e}")
         sys.exit(1)
