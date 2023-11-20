@@ -26,7 +26,7 @@ Element:
 python3 tools.py [-h] [-t {image,i,video,v}] [-p PATH] [-c CONFIG] [-o OUTPUT]
 ```
 - `-t, --type`: Specify the data type: 'image(i)' or 'video(v)' (default: 'image')
-- `-p, --path`: Path to images or video files (default: './assets/teddybear.jpeg')
+- `-p, --path`: Path to images or video files (default: './assets')
 - `-c, --config`: Path to the configuration file (default: './config.yaml')
 - `-o, --output`: Path to the output directory (default: './result')
 
