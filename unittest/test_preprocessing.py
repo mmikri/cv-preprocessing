@@ -16,6 +16,7 @@ class TestPreprocessingScript(unittest.TestCase):
         self.temp_image_path = os.path.join(self.temp_dir, 'temp_image.jpg')
         self.temp_video_path = os.path.join(self.temp_dir, 'temp_video.mp4')
         self.config_path = os.path.join(self.temp_dir, 'temp_config.yaml')
+        print(f"\n")
 
     def tearDown(self):
         # Remove the used temporary directory
