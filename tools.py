@@ -33,7 +33,7 @@ def create_parser() -> argparse.ArgumentParser:
         "--path",
         type=str,
         default="./assets",
-        help="Path to images or video files (default: './assets/teddybear.jpeg')"
+        help="Path to images or video files (default: './assets')"
     )
     parser.add_argument(
         "-c",
