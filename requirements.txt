@@ -1,0 +1,8 @@
+loguru==0.7.2
+numpy>=1.24.3
+opencv-python==4.8.1.78
+pip==23.3
+python-dotenv==1.0.0
+PyYAML==6.0.1
+setuptools==68.0.0
+wheel==0.41.2

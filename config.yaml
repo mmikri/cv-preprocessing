@@ -1,0 +1,42 @@
+image_settings:
+  cropped:
+    enabled: True
+    coordinates: [200, 1000, 1600, 2000] # [Top, Left, Bottom, Right]
+  resize:
+    enabled: True
+    output_size: [1920, 1080] # [width, height]
+  brightness:
+    enabled: True
+    factor: 1.2 # Brightness adjustment factor (If greater than 1, it brightens; if smaller, it darkens)
+  saturation:
+    enabled: True
+    factor: 0.8 # Saturation adjustment factor (If greater than 1, it decreases saturation; if smaller, it increases saturation)
+  rotate:
+    enabled: True
+    angle: 3 # Rotate counterclockwise by 90 degrees (1: 90 degrees, 2: 180 degrees, 3: 270 degrees)
+  flip:
+    enabled: True
+    options: horizontally # Flip options (Adjust using 'vertically' and 'horizontally')
+
+video_settings:
+  preview: True
+  save_video: True
+  save_image: True
+  cropped:
+    enabled: True
+    coordinates: [100, 200, 800, 1000] # [Top, Left, Bottom, Right]
+  resize:
+    enabled: True
+    output_size: [640, 480] # [width, height]
+  brightness:
+    enabled: True
+    factor: 1.2 # Brightness adjustment factor (If greater than 1, it brightens; if smaller, it darkens)
+  saturation:
+    enabled: True
+    factor: 0.5 # Saturation adjustment factor (If greater than 1, it decreases saturation; if smaller, it increases saturation)
+  rotate:
+    enabled: True
+    angle: 1 # Rotate counterclockwise by 90 degrees (1: 90 degrees, 2: 180 degrees, 3: 270 degrees)
+  flip:
+    enabled: True
+    options: vertically # Flip options (Adjust using 'vertically' and 'horizontally')
