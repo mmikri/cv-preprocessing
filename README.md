@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ### Command Line Arguments
 Element:
 ```bash
-python3 tools.py [-h] [-t {image,i,video,v}] [-p PATH] [-c CONFIG] [-o OUTPUT]
+python main.py [-h] [-t {image,i,video,v}] [-p PATH] [-c CONFIG] [-o OUTPUT]
 ```
 - `-t, --type`: Specify the data type: 'image(i)' or 'video(v)' (default: 'image')
 - `-p, --path`: Path to images or video files (default: './assets')
@@ -33,10 +33,10 @@ python3 tools.py [-h] [-t {image,i,video,v}] [-p PATH] [-c CONFIG] [-o OUTPUT]
 Examples:
 ```bash
 # Example 1: Process images
-python preprocessing_script.py -t image -p ./path/to/images -c config.yaml -o ./output_directory
+python main.py -t i -p ./path/to/images -c config.yaml -o ./output_directory
 
 # Example 2: Process videos
-python preprocessing_script.py -t video -p ./path/to/videos -c config.yaml -o ./output_directory
+python main.py -t v -p ./path/to/videos -c config.yaml -o ./output_directory
 ```
 
 ### Configuration File
@@ -93,5 +93,5 @@ video_settings:
 ### Run Unit Tests
 To run unit tests, use the following command:
 ```bash
-python -m unittest discover -s unittest -p 'test*.py'
+python -m unittest discover -s coverage/unittest -p 'UT*.py'
 ```
