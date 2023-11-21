@@ -7,7 +7,7 @@ import shutil
 import tempfile
 from io import StringIO
 from unittest.mock import patch
-from tools import main, create_parser
+from main import main, create_parser
 
 class TestPreprocessingScript(unittest.TestCase):
     def setUp(self):
