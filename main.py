@@ -2,6 +2,7 @@
 import os
 import argparse
 from dotenv import load_dotenv
+from app import __version__
 from utils.__env import *
 from utils.conf import load_config
 from utils.file import create_output_directory, get_supported_files
@@ -41,6 +42,10 @@ def create_parser() -> argparse.ArgumentParser:
     return parser
 
 def main(args: argparse.Namespace) -> None:
+    print(f"==================================")
+    print(f"The app version is {__version__}")
+    print(f"==================================")
+
     config_data = load_config(args.config)
     output_directory = args.output
     create_output_directory(output_directory)
