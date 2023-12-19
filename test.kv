@@ -1,0 +1,65 @@
+#: import os os
+
+<MyBoxLayout>:
+    orientation: 'horizontal'
+
+    LeftBox:
+        id: left_box
+        size_hint_x: 0.1
+
+    CenterBox:
+        id: center_box
+        size_hint_x: 0.7
+
+    RightBox:
+        id: right_box
+        size_hint_x: 0.2
+
+<LeftBox>:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: 0/255, 0/255, 0/255, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        orientation: 'vertical'
+        MyAppButton:
+            text: 'Button1'
+        MyAppButton:
+            text: 'Button2'
+        MyAppButton:
+            text: 'Button3'
+        MyAppButton:
+            text: 'Button4'
+        MyAppButton:
+            text: 'Button5'
+        MyAppButton:
+            text: 'Button6'
+
+<CenterBox>:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: 23/255, 32/255, 42/255, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Label:
+        id: center_label
+        text: "Image Preview Space"
+        font_size: '20sp'
+
+<RightBox>:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: 33/255, 47/255, 61/255, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Label:
+        id: right_label
+        text: "Adjustment of Values in Space"
+        font_size: '20sp'
