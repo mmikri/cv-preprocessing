@@ -4,7 +4,7 @@
 This script performs preprocessing on image and video data based on specified configurations.
 
 ## Prerequisites
-- Python 3.x
+- Python 3.8 ~ 3.12
 
 ## Usage
 
